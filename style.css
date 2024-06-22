@@ -4,52 +4,120 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
+
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
 }
+
 .logo {
-    width: 80px;
+    width: 120px;
     height: 80px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
+
 nav ul li {
-    margin-right: 20px;
+    margin-right: 100px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
+    font-family: 'Inter';
     transition: color 0.3s;
+    font-size: 18px;
 }
+
 nav ul li a:hover {
     color: yellow;
 }
-.welcome-line {
+.logo:hover{
+    scale: 1.2;
+}
+.container-2 {
+    padding: 140px;
+    font-family: 'Inter';
+    position: relative;
+}
+
+.yellow-line {
+    width: 100px;
+    /* Adjust the width to your preference */
+    height: 2px;
+    /* Adjust the height to make the line thicker or thinner */
+    background-color: yellow;
+    /* Set the background color to yellow */
+    margin: 40px 20px;
+}
+.line-and-text {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-top: 50px;
-    padding-right: 20px;
-    border-top: 2px solid yellow;
 }
-.welcome-text {
+.welcome-text{
+    margin-left: 15px;
     font-style: italic;
-    margin-left: 10px;
+    font-size: 20px;
 }
-.welcome-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.sub-text{
+    word-spacing: 2px;
+}
+p1{
+    font-size: 50px;
+    font-family: 'Inter';
+}
+.right-image{
+    width: 20%;
+    height: 70%;
+    position:absolute;
+    top: 30px;
+    right: 60px;
+}
+section{
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.container-3{
+    background-color: #eeee;
+    padding: 120px;
+    font-family: 'Inter';
+    position: relative;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+h1{
+    color: black; 
+    text-align: center;
+    font-size: 30px;
+}
+.left-image{
+    width: 30%;
+    height: 60%;
+    position:absolute;
+    top: 250px;
+    left: 180px;
+    border-bottom: 5px solid yellow;
+    border-right: 5px solid yellow;
+}
+.side-text{
+    color: rgba(103, 102, 102, 1);
+    width: 50%;
+    text-align:start;
+    margin: 70px 650px;
+    word-spacing: 2px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.container-4{
+    background-color: #ffffff;
+    padding: 120px;
+    font-family: 'Inter';
 }
