@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
 }
 
 .logo {
@@ -118,6 +118,64 @@ h1{
 }
 .container-4{
     background-color: #ffffff;
-    padding: 120px;
+    padding: 130px;
     font-family: 'Inter';
+    color: rgb(0, 0, 0);
+}
+.books {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.book1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+.book-img {
+    width: 150px; 
+    height: auto; 
+}
+
+.book1 span{
+    margin-top: 15px;
+}
+
+.book-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.order-now {
+    cursor: pointer;
+    border: 2px solid yellow;
+}
+footer{
+    background-color: #1B3764;
+    margin-left: 160px;
+    padding: 20px;
+    position: relative;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: 250px;
+}
+.icon-img{
+    width: 30px;
+    padding-left: 50px;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
 }

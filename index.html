@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container fade-in">
         <div>
             <img src="images/logo 1.png" alt="BookMart Logo" class="logo">
         </div>
@@ -29,7 +29,7 @@
         </nav>
     </div>
     <main>
-        <div class="container-2">
+        <div class="container-2 fade-in">
             <div class="line-and-text">
                 <div class="yellow-line"></div>
                 <div class="welcome-text">Welcome to Bookmart</div>
@@ -39,11 +39,11 @@
                 We believe that reading books is essential to a healthy culture. It's where you can connect with authors
                 and their stories.
             </div>
-            <img src="images/image2.png" alt="Image" class="right-image">
+            <img src="images/image2.png" alt="Image" class="right-image fade-in ">
         </div>
     </main>
     <section>
-        <div class="container-3">
+        <div class="container-3 fade-in">
             <h1><b>About BookMart</b></h1>
             <div class="yellow-line" style="margin: 5px 580px; height: 5px; "></div>
             <div >
@@ -60,13 +60,87 @@
         </div>
     </section>
     <section>
-        <div class="container-4">
-            <h1><b>About BookMart</b></h1>
+        <div class="container-4 fade-in">
+            <h1><b>Explore More</b></h1>
             <div class="yellow-line" style="margin: 5px 580px; height: 5px; "></div>
-            <div >
+            <div>
+                <div class="books ">
+                    <div class="book1 fade-in">
+                        <img src="images/book1.png" alt="Book 1" class="book-img">
+                        <span class="book-title">Book Name</span>
+                        <span class="order-now">Order Now</span>
+                    </div>
+                    <div class="book1 fade-in">
+                        <img src="images/book2.png" alt="Book 2" class="book-img">
+                        <span class="book-title">Book Name</span>
+                        <span class="order-now">Order Now</span>
+                    </div>
+                    <div class="book1 fade-in">
+                        <img src="images/book3.png" alt="Book 3" class="book-img">
+                        <span class="book-title">Book Name</span>
+                        <span class="order-now">Order Now</span>
+                    </div>
+                    <div class="book1 fade-in">
+                        <img src="images/book4.png" alt="Book 3" class="book-img">
+                        <span class="book-title">Book Name</span>
+                        <span class="order-now">Order Now</span>
+                    </div>
+                </div>
+                <div class="books">
+                    <div class="book1 fade-in">
+                        <img src="images/book1.png" alt="Book 1" class="book-img">
+                        <span class="book-title">Book Name</span>
+                        <span class="order-now">Order Now</span>
+                    </div>
+                    <div class="book1 fade-in">
+                        <img src="images/book2.png" alt="Book 2" class="book-img">
+                        <span class="book-title">Book Name</span>
+                        <span class="order-now">Order Now</span>
+                    </div>
+                    <div class="book1 fade-in">
+                        <img src="images/book3.png" alt="Book 3" class="book-img">
+                        <span class="book-title">Book Name</span>
+                        <span class="order-now">Order Now</span>
+                    </div>
+                    <div class="book1 fade-in">
+                        <img src="images/book4.png" alt="Book 3" class="book-img">
+                        <span class="book-title">Book Name</span>
+                        <span class="order-now">Order Now</span>
+                    </div>
+                </div>
         </div>
     </section>
+    <footer >
+        <div>
+            <img src="images/logo 1.png" alt="BookMart Logo" class="logo fade-in">
+        </div>
+        <div class="icon fade-in">
+            <img src="images/facebook-icon.png" alt="image" class="icon-img">
+            <img src="images/twitter-icon.png" alt="image" class="icon-img">
+            <img src="images/instagram-icon.png" alt="image" class="icon-img">
+            <img src="images/linkedin-icon.png" alt="image" class="icon-img">
+        </div>
+    </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+    
+            function checkVisibility() {
+                fadeInElements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+    
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Initial check
+        });
+    </script>
 </body>
 
 </html>
