@@ -62,10 +62,6 @@ To run this project locally, you need a web browser.
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 
-## Contact
-
-If you have any questions or feedback, feel free to contact us at [nharika203@gmail.com].
-
 ---
 
 Thank you for visiting BookMart!
