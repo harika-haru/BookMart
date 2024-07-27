@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1B3764;
+    background-color: #132338;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -186,4 +186,5 @@ footer{
 .upload-img{
     display: flex;
     justify-items: center;
+    
 }
